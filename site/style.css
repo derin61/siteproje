@@ -1,0 +1,177 @@
+﻿body {
+    background-color:#d5d5d5;
+}
+
+
+*{
+    border-style: none;
+    border-color: inherit;
+    border-width: 0;
+    margin: 0 0 0 15px;
+    padding: 0;
+}   
+a{
+    text-decoration:none;
+    color:#555;
+}
+a:hover{
+    color:#999;
+}
+#wrapper{
+width: 1200px;
+height: 1100px;
+margin: 0 auto;
+
+
+}
+header{
+    float: left ;
+    width: 1200px;
+    height: 120px;
+    
+
+}
+header .başlık{
+    width: 1200px ;
+    height: 120px;
+    background-color:aquamarine ;
+    text-align:center;
+    line-height:120px;
+    font-size:56px;
+    color:darkred;
+}
+
+.banner {
+    float: right;
+    margin-top: 45px;
+    width: 800px;
+    height: 360px;
+    line-height: 360px;
+    text-align: center;
+    font-size: 56px;
+    background-image: url('/image/havuzfotosu2.jpg');
+    background-size: cover;
+
+}
+.solkısım {
+    float: left;
+    width: 300px;
+    height: 360px;
+    background-color: #d5d5d5;
+    margin-top: 45px;
+    font-size: 25px;
+}
+ .solkısım ul{
+    list-style:none;
+}
+ .solkısım ul li {
+  line-height:80px;
+  margin-left:50px;
+    }
+    .solkısım ul li .havuzlar-wrap {
+        position: relative;
+        
+    }
+ .solkısım ul li .havuzlar-wrap .havuzlar {
+     display:none;
+     position:absolute;
+     width:100px;
+     height:50px;
+     background-color:darkred;
+
+}
+ .solkısım2 {
+  float: left;
+  width: 300px;
+ height: 500px;
+   margin-top: 45px;
+ }
+    .solkısım2 .hızlıkayıt {
+        float: left;
+        width: 290px;
+        height: auto;
+       
+    }
+        .solkısım2 .hızlıkayıt .ust {
+            float: left;
+            width: 270px;
+            height: 48px;
+            line-height:44px;
+            padding-left:15px;
+            border-bottom: 1px solid #ccc;
+            background-color: #fff;
+        }
+    .solkısım2 .hızlıkayıt .alt {
+        float: left;
+        width: 285px;
+        height: 220px;
+        border-bottom: 1px solid #ccc;
+        background-color: #fff;
+
+    }
+        .solkısım2 .hızlıkayıt .alt .textbox {
+            width: 248px;
+            height: 38px;
+            border: 1px solid #ccc;
+            cursor:pointer
+        }
+        .solkısım2 .hızlıkayıt .alt .btnGiris {
+            line-height: 40px;
+            text-align: center;
+            color: #fff;
+            background-color: #0099CC;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+      .pnlKullanici{
+          width:100%;
+          background-color:#fff;
+
+      }
+.KullaniciCikisi {
+    margin-top: 10px;
+    background-color: white;
+    cursor: pointer;
+    color: #0099CC;
+}
+.solkısım2 .duyurular {
+    float: left;
+    width: 300px;
+    height: auto;
+    margin-top: 45px;
+}
+    .solkısım2 .duyurular .ust {
+        float: left;
+        width: 270px;
+        height: 48px;
+        line-height: 44px;
+        padding-left: 15px;
+        border-bottom: 1px solid #ccc;
+        background-color: #fff;
+    }
+
+    .solkısım2 .duyurular .alt {
+        float: left;
+        width: 284px;
+        height: 173px;
+        border-bottom: 1px solid #ccc;
+        background-color: #fff;
+    }
+        .solkısım2 .duyurular .alt .duyuru-wrap {
+            float:left;
+            width:85%;
+            height:auto;
+            background-color:#d5d5d5;
+           
+        }
+
+
+        .içerik1 {
+            float: right;
+            width: 800px;
+            height: auto;
+            background-color:#d5d5d5;
+            margin-top: 35px;
+            font-size:20px;
+            
+        }

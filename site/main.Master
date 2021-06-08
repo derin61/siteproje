@@ -1,0 +1,138 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="main.master.cs" Inherits="site.main" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+   <title>Yüzme Havuzları</title>
+
+    <link href="/style.css" rel="stylesheet" />
+
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        
+        <div id="wrapper">
+
+          <header>
+              <div class ="başlık">
+                  YÜZME HAVUZLARI
+              </div>
+
+          </header>
+
+            <div class="banner">
+                
+            </div>
+
+            
+            
+            <div class="solkısım">
+                 <ul>
+                     <li>
+                         <a href="default.aspx">Ana Sayfa</a>
+                        
+                     </li>
+
+                     <li>
+                         <a href="havuzlar.aspx">Havuzlar</a>
+                        
+                     </li>
+
+                     <li>
+                         <a href="iletisim.aspx">İletişim</a>
+                        
+                     </li>
+                     <li>
+                         <a href="randevu.aspx">Randevu</a>
+                        
+                     </li>
+                     
+                 </ul>
+                
+
+            </div>
+                
+
+            <div class="solkısım2">
+
+                <div class="hızlıkayıt">
+
+                    <asp:Panel ID="pnlGiris" runat="server">
+
+                    <div class="ust">
+                        Kullanıcı Girişi 
+                    </div>
+                    <div class="alt">
+
+                        <br />
+&nbsp;&nbsp;&nbsp; Kullanıcı Adı<br />
+                    <asp:TextBox ID="txtKullaniciAdi" CssClass="textbox" runat="server" />
+
+                        <br />
+                        <br />
+&nbsp;&nbsp;&nbsp; Şifre<br />
+                    <asp:TextBox ID="txtSifre" CssClass="textbox" runat="server" OnTextChanged="txtSifre_TextChanged1"/>
+
+                    
+                        <a href="Kaydol.aspx" class="btnKayit" >Kaydet</a>
+                    <asp:Button ID="btnGiris" CssClass="btnGiris" Text="Giriş" runat="server" Width="56px" BackColor="#999999" Height="33px" OnClick="btnGiris_Click" />
+                    <asp:Label ID="lblSonuc" Text="" runat="server"/>
+                     
+                    </div>
+                     </asp:Panel>
+
+                     <asp:Panel ID="pnlKullanici" runat="server" CssClass="pnlKullanici" >
+                         &nbsp;&nbsp;&nbsp; Hoşgeldiniz, <asp:Label ID="lblKullaniciAdi" Text="" runat="server" />
+                         <br />
+                         <br />
+                         <asp:Button ID="btnCikis" Text="Çıkış" runat="server" OnClick="btnCikis_Click" CssClass="KullaniciCikisi" />
+                             
+                         </asp:Panel>
+
+                </div>
+
+                <div class="duyurular">
+                    <div class="ust">
+                       Duyurular
+                     </div>
+
+                    <div class="alt">
+
+                        &nbsp;&nbsp;&nbsp; Kampanya<br />
+&nbsp;&nbsp;&nbsp;&nbsp;
+                        <br />
+&nbsp;&nbsp;&nbsp; Çocuk havuzlarında %50 indirim<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (30.05.2021)<br />
+                        <br />
+&nbsp;&nbsp;&nbsp;&nbsp;
+                        <br />
+&nbsp;&nbsp;&nbsp; Olimpik havuzlarda %30 indirim<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (30.05.2021)<br />
+&nbsp;&nbsp;&nbsp;
+                        <br />
+&nbsp;&nbsp;&nbsp;
+
+                        
+                                
+            </div>
+
+     
+        </div>
+
+</div>
+        <div class ="içerik1">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+
+        </div>
+            </div>
+            
+           
+    </form>
+</body>
+</html>
